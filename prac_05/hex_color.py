@@ -20,3 +20,4 @@ def main():
 
 
 main()
+# hex codes for colors 
