@@ -20,3 +20,4 @@ def main():
 
 
 main()
+# read the email inout and extract the usernames

@@ -17,3 +17,4 @@ sorted_word_counts = sorted(word_counts.items())
 for word, count in sorted_word_counts:
     formatted_output = f"{word:{max_word_length}} : {count}"
     print(formatted_output)
+# extract the times of word occurences in a sentence
