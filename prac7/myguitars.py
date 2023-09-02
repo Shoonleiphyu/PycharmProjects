@@ -25,6 +25,7 @@ def display_guitars(guitars):
         for i, guitar in enumerate(guitars, 1):
             print(f"Guitar {i}: {guitar}")
 
+
 def add_new_guitar():
     name = input("Name: ")
     year = int(input("Year: "))
