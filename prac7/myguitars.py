@@ -25,8 +25,7 @@ def display_guitars(guitars):
         for i, guitar in enumerate(guitars, 1):
             print(f"Guitar {i}: {guitar}")
 
-
-def get_new_guitar():
+def add_new_guitar():
     name = input("Name: ")
     year = int(input("Year: "))
     cost = float(input("Cost: $"))
@@ -39,22 +38,22 @@ def write_guitars(guitars):
             file.write(f"{guitar.name},{guitar.year},{guitar.cost:.2f}\n")
 
 
-def sort_guitars_by_year(guitars):
+def sort_guitars_years(guitars):
     guitars.sort()
 
 
 def main():
     guitars = read_guitars()
+    sort_guitars_years(guitars)
     display_guitars(guitars)
 
-    new_guitar = get_new_guitar()
+    new_guitar = add_new_guitar()
     guitars.append(new_guitar)
     write_guitars(guitars)
 
-    sort_guitars_by_year(guitars)
-    print("\nThese are my guitars (sorted by year):")
+    sort_guitars_years(guitars)
+    print("\nThese are my guitars:")
     display_guitars(guitars)
 
 
-if __name__ == "__main__":
-    main()
+main()
