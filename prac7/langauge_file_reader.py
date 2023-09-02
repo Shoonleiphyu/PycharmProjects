@@ -88,6 +88,7 @@ def using_csv_namedtuple():
         # map is for iteration
         print(language.name, 'was released in', language.year)
         print(repr(language))
+    in_file.close()
 
 
 using_csv_namedtuple()
