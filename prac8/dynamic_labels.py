@@ -1,11 +1,7 @@
 from kivy.app import App
-from kivy.graphics import Color, Rectangle
 from kivy.lang import Builder
 from kivy.uix.label import Label
-from kivy.uix.button import Button
 from kivy.properties import StringProperty
-
-
 
 
 class DynamicLabelsApp(App):
@@ -29,7 +25,6 @@ class DynamicLabelsApp(App):
             temp_label = Label(text=name)
             temp_label.color = (1,0,0,1)
             self.root.ids.main.add_widget(temp_label)
-
 
 
 DynamicLabelsApp().run()

@@ -13,7 +13,6 @@ class MilesConverterApp(App):
     def build(self):
         self.title = "Convert Miles to Kilometres"
         self.root = Builder.load_file('convert_miles_km_.kv')
-        #self.output_label = "Kilometer will appear here"
         return self.root
 
     def handle_calculate(self):
